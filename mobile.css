@@ -167,10 +167,10 @@
     /* ============================  Block 4  ================================== */
 
     .artCollageBlock{
-        display: grid;
+        display: flex;
         align-items: center;
-        height: 75vh;
-        padding: 7vw;
+        /* background-color: blue; */
+        padding: 7vw 7vw;
     }
 
     .artCollageBgTape{

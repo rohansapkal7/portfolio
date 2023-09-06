@@ -319,9 +319,8 @@
     /* ================================== Block 4 ==================================== */
 
     .artCollageBlock{
-        display: grid;
         align-items: center;
-        height: 75vh;
+        padding: 5vw 5vw;
     }
 
     .artCollageBgTape{
