@@ -632,7 +632,7 @@ header label img{
 /* ==================================  Block 5 =================================== */
 
 .contact-section-main{
-    background-color: red;
+    /* background-color: red; */
     width: 100%;
     padding: 0 5vw;
 }
@@ -648,7 +648,7 @@ header label img{
 }
 
 .contact-block1{
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 .contact-block1 h2{
@@ -666,16 +666,39 @@ header label img{
     height: 3vw;
     width: 100%;
     font-size: 1.2vw;
-    background-color: #4d1f9d;
+    /* background-color: #4d1f9d; */
     align-items: center;
     gap: 1vw;
 }
 
-.contact-creds img{
-    height: 50%;
+.contact-creds i{
+    font-size: 1.5vw;
+    padding: 0;
 }
 
 .contact-block2{
-    background-color: yellow;
+    /* background-color: yellow; */
     width: 40%;
+    display: grid;
+    place-items: center;
+}
+
+.pulse{
+    width: 40%;
+    aspect-ratio: 1;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+}
+
+.pulse::before,
+.pulse::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dc);
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(2.6);
 }
