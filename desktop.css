@@ -634,7 +634,9 @@ header label img{
 .contact-section-main{
     /* background-color: red; */
     width: 100%;
-    padding: 0 5vw;
+    padding: 0 5vw 5vw 5vw;
+    overflow: hidden;
+    margin-top: 2vw;
 }
 
 .contact-block-holder{
@@ -647,18 +649,16 @@ header label img{
     width: 50%;
 }
 
-.contact-block1{
-    /* background-color: blue; */
-}
-
 .contact-block1 h2{
     font-size: 2.5vw;
     margin: 2vw 0;
+    color: var(--dc);
 }
 
 .contact-block1 p{
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     margin-bottom: 2vw;
+    color: grey;
 }
 
 .contact-creds{
@@ -674,6 +674,7 @@ header label img{
 .contact-creds i{
     font-size: 1.5vw;
     padding: 0;
+    color: grey;
 }
 
 .contact-block2{
@@ -684,7 +685,7 @@ header label img{
 }
 
 .pulse{
-    width: 40%;
+    width: 50%;
     aspect-ratio: 1;
     background-color: red;
     border-radius: 50%;
@@ -700,5 +701,79 @@ header label img{
     background-color: var(--dc);
     border-radius: 50%;
     z-index: -1;
-    transform: scale(2.6);
+    opacity: 0.6;
+}
+
+.pulse::before{
+    animation: pulse 3s ease infinite;
+}
+
+.pulse::after{
+    animation: pulse 1.5s ease infinite;
+}
+
+/* ==================================  Block 6 =================================== */
+
+.chat-section-main{
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+}
+
+.chat-section-img-div{
+    /* background-color: var(--grey); */
+    width: 50%;
+}
+
+.chat-interface{
+    /* background-color: blue; */
+    width: 50%;
+}
+
+.chat-interface form{
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding: 5vw 5vw 3vw 0;
+}
+
+#s-name,#s-mail{
+    width: 100%;
+    height: 3vw;
+    font-size: 1vw;
+    margin-bottom: 2vw;
+    border: 0;
+    border-bottom: 0.15vw solid var(--grey);
+    outline: none;
+}
+
+#s-msg{
+    width: 100%;
+    height: 20vw;
+    font-size: 1vw;
+    margin-bottom: 2vw;
+    border: 0;
+    border-bottom: 0.15vw solid var(--grey);
+    outline: none;
+    resize: none;
+}
+
+#submit-btn{
+    font-size: 1vw;
+    padding: 1vw 0;
+    width: 50%;
+    align-self: flex-end;
+    border: none;
+    background: var(--grad2);
+    color: white;
+    transition: all 0.5s ease;
+}
+
+#submit-btn:hover{
+    cursor: pointer;
+    background: var(--dc);
+    border-radius: 1vw;
 }

@@ -26,3 +26,19 @@
     50%{transform: translateY(+10px);}
     100%{transform: translateY(0px);}
 }
+
+@keyframes pulse {
+    100%
+    {
+        transform: scale(3.5);
+        opacity: 0;
+    } 
+}
+
+@keyframes pulse-tab-mob {
+    100%
+    {
+        transform: scale(1.7);
+        opacity: 0;
+    } 
+}
