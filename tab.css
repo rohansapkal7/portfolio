@@ -240,6 +240,7 @@
         pointer-events: all;
         align-items: start;
         border-radius: 2vw;
+        border: none;
     }
 
     .card-tape{
@@ -309,7 +310,8 @@
     }
 
     .cards:hover{
-        margin-top: -1vh;
+        margin-top: -1vw;
+        box-shadow: 0 0.6vw 1vw rgba(0, 0, 0, 0.374);
     }
 
     /* ================================== Block 4 ==================================== */
@@ -447,6 +449,53 @@
 
 .pulse::after{
     animation: pulse-tab-mob 1.5s ease infinite;
+}
+
+/* ==================================  Block 6 =================================== */
+
+.chat-section-main{
+    flex-direction: column;
+    margin-top: 8vw;
+}
+
+.chat-section-img-div{
+    /* background-color: var(--grey); */
+    width: 100%;
+    order: 2;
+}
+
+.chat-section-img-div img{
+    width: 70%;
+}
+
+.chat-interface{
+    /* background-color: blue; */
+    width: 100%;
+    order: 1;
+}
+
+.chat-interface form{
+    width: 100%;
+    padding: 0 10vw;
+}
+
+#s-name,#s-mail{
+    height: 5vh;
+    font-size: 2.5vw;
+    margin-bottom: 3vw;
+    border-bottom: 0.25vw solid var(--grey);
+}
+
+#s-msg{
+    height: 50vw;
+    font-size: 2.5vw;
+    margin: 3vw 0;
+    border-bottom: 0.25vw solid var(--grey);
+}
+
+#submit-btn{
+    font-size: 2.5vw;
+    padding: 1.5vw 0;
 }
 
 }

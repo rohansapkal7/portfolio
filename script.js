@@ -35,3 +35,17 @@ projectSlider.addEventListener('mousemove', function (e) {
 window.addEventListener('mouseup', function (e) {
     pressed = false;
 })
+
+// ============================== HTML to GSheet =================================
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbySAtK6YK-CGEhsNycXTvPTrTxey9ic04hpZazpZBcH50FX84Rfzuzv2x93R5xyu38x/exec'
+
+const form = document.forms['contact-form']
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("Thank you! your massege sent successfully." ))
+  .then(() => { window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+})

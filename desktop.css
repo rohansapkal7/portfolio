@@ -42,6 +42,14 @@ html{
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar{
+    width: 0;
+}
+
+html img{
+    pointer-events: none;
+}
+
 header{
     width: 100%;
     padding: 0 5vw;
@@ -398,7 +406,7 @@ header label img{
     height: 40%;
     left: 0;
     bottom: 0;
-    background-color: var(--dc);
+    background-color: var(--grey);
 }
 
 .skillsContainer{
@@ -445,7 +453,7 @@ header label img{
     justify-content: space-between;
     overflow: hidden;
     position: relative;
-    border: 0.2vw solid grey;
+    /* border: 0.2vw solid grey; */
     transition: all 0.6s ease;
     /* pointer-events: none; */
 }
@@ -555,7 +563,7 @@ header label img{
     height: 55%;
     left: 0;
     top: 0;
-    background-color: var(--dc);
+    background-color: var(--grey);
     z-index: -1;
 }
 
@@ -571,7 +579,7 @@ header label img{
 
 .artCollage div{
     border-radius: 1vw;
-    background-color: var(--grey);
+    background-color: whitesmoke;
 }
 
 .artCollagecomp1{
@@ -635,8 +643,7 @@ header label img{
     /* background-color: red; */
     width: 100%;
     padding: 0 5vw 5vw 5vw;
-    overflow: hidden;
-    margin-top: 2vw;
+    padding-top: 2vw;
 }
 
 .contact-block-holder{
@@ -687,9 +694,12 @@ header label img{
 .pulse{
     width: 50%;
     aspect-ratio: 1;
-    background-color: red;
+    background-color: rgb(255, 238, 0);
+    background-image: url(imgs/meBW.png);
+    background-size: 100%;
     border-radius: 50%;
     position: relative;
+    border: 0.4vw solid black;
 }
 
 .pulse::before,
@@ -723,6 +733,12 @@ header label img{
 .chat-section-img-div{
     /* background-color: var(--grey); */
     width: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.chat-section-img-div img{
+    width: 75%;
 }
 
 .chat-interface{
@@ -737,7 +753,7 @@ header label img{
     flex-direction: column;
     height: 100%;
     justify-content: center;
-    padding: 5vw 5vw 3vw 0;
+    padding: 5vw 5vw 3vw 5vw;
 }
 
 #s-name,#s-mail{
@@ -776,4 +792,12 @@ header label img{
     cursor: pointer;
     background: var(--dc);
     border-radius: 1vw;
+}
+
+/* ================================  Footer ==================================== */
+
+footer{
+    width: 100%;
+    height: 12vw;
+    background: var(--dc);
 }

@@ -260,6 +260,7 @@
     .contact-creds{
         font-size: 3vw;
         gap: 2vw;
+        margin: 2.5vw 0;
     }
 
     .contact-creds i{
@@ -276,6 +277,7 @@
 
     .pulse{
         width: 35%;
+        border: 0.5vw solid black;
     }
 
     .pulse::before{
@@ -284,6 +286,27 @@
 
     .pulse::after{
         animation: pulse-tab-mob 1.5s ease infinite;
+    }
+
+/* ==================================  Block 6 =================================== */
+    
+    .chat-interface{
+        margin-top: 4vh;
+    }
+    #s-name,#s-mail{
+        font-size: 3.5vw;
+        border-bottom: 0.5vw solid var(--grey);
+    }
+    
+    #s-msg{
+        font-size: 3.5vw;
+        margin: 5vw 0;
+        border-bottom: 0.5vw solid var(--grey);
+    }
+    
+    #submit-btn{
+        font-size: 3vw;
+        padding: 2vw 0;
     }
    
 }
