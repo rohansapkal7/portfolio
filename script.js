@@ -43,9 +43,11 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbySAtK6YK-CGEhsNycXTv
 const form = document.forms['contact-form']
 
 form.addEventListener('submit', e => {
+    document.getElementById("submit-btn").value = "Please Wait";
   e.preventDefault()
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-  .then(response => alert("Thank you! your massege sent successfully." ))
+  .then(response => {
+    alert("Thank you! your massege sent successfully." )})
   .then(() => { window.location.reload(); })
   .catch(error => console.error('Error!', error.message))
 })

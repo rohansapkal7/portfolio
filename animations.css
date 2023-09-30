@@ -4,10 +4,22 @@
     100%{ transform: translateX(-20px);}
 }
 
+@keyframes animate-s1-dsk {
+    0%{ transform: translateX(-60px);}
+    50%{ transform: translateX(+60px);}
+    100%{ transform: translateX(-60px);}
+}
+
 @keyframes animate-s2 {
     0%{ transform: translateX(+20px);}
     50%{ transform: translateX(-20px);}
     100%{ transform: translateX(+20px);}
+}
+
+@keyframes animate-s2-dsk {
+    0%{ transform: translateX(+40px);}
+    50%{ transform: translateX(-40px);}
+    100%{ transform: translateX(+40px);}
 }
 
 @keyframes animate-s3 {
@@ -16,10 +28,22 @@
     100%{ transform: translateY(-20px);}
 }
 
+@keyframes animate-s3-dsk {
+    0%{ transform: translateY(-60px);}
+    50%{ transform: translateY(+60px);}
+    100%{ transform: translateY(-60px);}
+}
+
 @keyframes animate-s4 {
     0%{ transform: translateY(+20px);}
     50%{ transform: translateY(-20px);}
     100%{ transform: translateY(+20px);}
+}
+
+@keyframes animate-s4-dsk {
+    0%{ transform: translateY(+50px);}
+    50%{ transform: translateY(-50px);}
+    100%{ transform: translateY(+50px);}
 }
 
 @keyframes animate-me {
@@ -30,7 +54,7 @@
 @keyframes pulse {
     100%
     {
-        transform: scale(2.5);
+        transform: scale(2.4);
         opacity: 0;
     } 
 }

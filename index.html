@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <header id="home">
         <div class="logo">
             <img src="imgs/mascot.png" alt="logo">
             <h1>Rohan Sapkal</h1>
@@ -24,7 +24,7 @@
         <label for="click"><img src="imgs/mascot.png" alt="logo - Creator Rony"></label>
 
         <ul>
-            <li class="active"><a href="#">HOME</a></li>
+            <li class="active"><a href="#home">HOME</a></li>
             <li><a href="#experience">EXPERIENCE</a></li>
             <li><a href="#education">EDUCATION</a></li>
             <li><a href="#projects">PROJECTS</a></li>
@@ -50,8 +50,8 @@
                 <p>Computer Engineering student with a passion for graphic design, seeking opportunities to apply technical skills and creativity in the technology and design industries.</p>
             </div>
             <div class="btn-wrapper">
-                <button>RESUME</button>
-                <button>HIRE ME</button>
+                <button class="resume-btn">RESUME</button>
+                <a href="#contact-2"><button class="hireme-btn">HIRE ME</button></a>
             </div>
         </div>
         <div class="bubble s1"></div>
@@ -135,9 +135,16 @@
 
         <div class="skills-project-wrapper">
 
+            <div class="git-card">
+                <div class="git-dp"></div>
+                <p class="github-name">Github</p>
+                <p class="git-userId">@rohansapkal7</p>
+                <div class="swipe-to">
+                    <p>swipe to see more >></p>
+                </div>
+            </div>
 
-
-            <div class="cards">
+            <div class="cards cards-bg">
                 <div class="card-tape"></div>
                 <div class="card-icon">
                     <img src="imgs/crazyMe.png" alt="icon">
@@ -156,7 +163,7 @@
                 <button>DOWNLOAD</button>
             </div>
 
-            <div class="cards">
+            <div class="cards cards-bg">
                 <div class="card-tape"></div>
                 <div class="card-icon">
                     <img src="imgs/KillerCats-Icon.png" alt="icon">
@@ -174,7 +181,7 @@
                 <button>DOWNLOAD</button>
             </div>
 
-            <div class="cards">
+            <div class="cards cards-bg">
                 <div class="card-tape"></div>
 
                 <div class="card-icon">
@@ -193,7 +200,7 @@
                 <button>DOWNLOAD</button>
             </div>
 
-            <div class="cards">
+            <div class="cards cards-bg">
                 <div class="card-tape"></div>
                 <div class="card-icon">
                     <img src="icons/cpp-icon.svg" alt="icon">
@@ -220,18 +227,25 @@
 
     <div class="artCollageBlock">
         <div class="artCollageBgTape"></div>
+
+        <div class="sectionLabel customLabel1">
+            <img src="imgs/skilledMe.png" alt="Skilled Bitmoji - Rohan Sapkal" id="skilledMe">
+            <h1 class="hideEl1">DESIGINING SKILLS</h1>
+            <h1 class="hideEl2">DESIGINING</h1>
+        </div>
+        
         <div class="artCollage">
-            <div class="artCollagecomp1">comp1</div>
-            <div class="artCollagecomp2">comp2</div>
-            <div class="artCollagecomp3">comp3</div>
-            <div class="artCollagecomp4">comp4</div>
-            <div class="artCollagecomp5">comp5</div>
-            <div class="artCollagecomp6">comp6</div>
-            <div class="artCollagecomp7">comp7</div>
-            <div class="artCollagecomp8">comp8</div>
-            <div class="artCollagecomp9">comp9</div>
-            <div class="artCollagecomp10">comp10</div>
-            <div class="artCollagecomp11">comp11</div>
+            <div class="artCollagecomp1 big-sqr"></div>
+            <div class="artCollagecomp2 small-sqr"></div>
+            <div class="artCollagecomp3 small-sqr"></div>
+            <div class="artCollagecomp4 small-sqr"></div>
+            <div class="artCollagecomp5 small-sqr"></div>
+            <div class="artCollagecomp6 big-sqr"></div>
+            <div class="artCollagecomp7 small-sqr"></div>
+            <div class="artCollagecomp8 small-sqr"></div>
+            <div class="artCollagecomp9 big-sqr"></div>
+            <div class="artCollagecomp10 small-sqr"></div>
+            <div class="artCollagecomp11 small-sqr"></div>
         </div>
     </div>
 
@@ -275,7 +289,7 @@
 
     <!-- Block 6 -->
 
-    <div class="chat-section-main">
+    <div class="chat-section-main" id="contact-2">
         <div class="chat-section-img-div">
             <img src="imgs/meditatingMe.gif" alt="meditating gif">
         </div>
@@ -287,7 +301,7 @@
                 
                 <input type="text" name="s-mail" placeholder="Email" id="s-mail" required>
                 
-                <textarea name="s-msg" id="s-msg" cols="20" rows="10">Source code?</textarea>
+                <textarea name="s-msg" id="s-msg" cols="20" rows="25">Source code?</textarea>
 
                 <input type="submit" id="submit-btn" value="Send">
             </form>
@@ -295,7 +309,26 @@
     </div>
 
     <footer>
+        <div class="copyright">
+            <p>Copyright © 2023 - Rohan Sapkal. <br> All rights reserved
+            <i class="fa-solid fa-heart"></i></p>
+        </div>
 
+        <div class="web">
+            <p>
+                <a href="https://google.com">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    rohansapkal7.github.io/portfolio
+                </a>
+            </p>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://google.com"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://google.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://google.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://google.com"><i class="fa-brands fa-discord"></i></a>
+        </div>
     </footer>
 
 <!--

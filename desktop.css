@@ -163,28 +163,28 @@ header label img{
     width: 55vw;
     top: 16vw;
     right: -6%;
-    animation: animate-s1 3s infinite;
+    animation: animate-s1-dsk 3s infinite;
 }
 
 .s2{
     width: 15vw;
     top: 10%;
     right: -8%;
-    animation: animate-s2 4s infinite;
+    animation: animate-s2-dsk 4s infinite;
 }
 
 .s3{
     width: 6vw;
     top: 9vw;
     right: 9%;
-    animation: animate-s3 4s infinite;
+    animation: animate-s3-dsk 4s infinite;
 }
 
 .s4{
     width: 16vw;
     top: 4vw;
     right: 35%;
-    animation: animate-s4 3s infinite;
+    animation: animate-s4-dsk 3s infinite;
 }
 
 /* left side Intro all */
@@ -201,16 +201,17 @@ header label img{
 .intro{
     width: 100%;
     /* background-color: grey; */
+    margin-top: 2.5vw;
 }
 
 .intro p{ 
     margin-top: 1%;
-    font-size: 3vw;
+    font-size: 2vw;
     font-family: pop-b;
 }
 
 .intro h1{
-    font-size: 9vw;
+    font-size: 8vw;
     font-family: pop-bl;
     line-height: 0.9;
     background: var(--grad2);
@@ -219,7 +220,7 @@ header label img{
 }
 
 .role p,.role span{
-    font-size: 3vw;
+    font-size: 2.5vw;
     font-family: pop-b;
 }
 
@@ -256,20 +257,20 @@ header label img{
     /* background-image: var(--grad2); */
 }
 
-.btn-wrapper button:nth-child(1){
+.resume-btn{
     background-image: var(--grad2);
     color: white;
 }
 
-.btn-wrapper button:nth-child(1):hover{
+.resume-btn:hover{
     background: var(--grad);
 }
 
-.btn-wrapper button:nth-child(2){
+.hireme-btn{
     background-color: var(--grey);
 }
 
-.btn-wrapper button:nth-child(2):hover{
+.hireme-btn:hover{
     background-color: grey;
     color: white;
 }
@@ -369,7 +370,7 @@ header label img{
 
 .s5{
     background-image: none;
-    background-color: var(--grey);
+    background-color: whitesmoke;
     width: 30vw;
     left: -40%;
     top: 38vw;
@@ -378,7 +379,7 @@ header label img{
 
 .s6{
     background-image: none;
-    background-color: var(--grey);
+    background-color: whitesmoke;
     width: 15vw;
     left: 30%;
     top: 46vw;
@@ -387,7 +388,7 @@ header label img{
 
 .s7{
     background-image: none;
-    background-color: var(--grey);
+    background-color: whitesmoke;
     width: 9vw;
     left: 23%;
     top: 37vw;
@@ -440,10 +441,67 @@ header label img{
     display: none;
 }
 
-.cards{
+.git-card{
+    background-color: var(--dc);
+    padding: 3vw 0;
+}
+
+.cards-bg{
+    background-color: whitesmoke;
+}
+
+.git-dp{
+    width: 50%;
+    background-color: red;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    position: relative;
+}
+
+.git-dp::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    aspect-ratio: 1;
+    background-color: black;
+    border-radius: 100%;
+}
+
+.github-name{
+    font-size: 3vw;
+    font-family: pop-b;
+    color: white;
+}
+
+.git-userId{
+    font-size: 1vw;
+    color: white;
+    margin-top: -2.5vw;
+    cursor: pointer;
+}
+
+.swipe-to{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    background-color: white;
+    border-radius: 1000px;
+}
+
+.swipe-to p{
+    font-size: 1vw;
+    color: var(--dc);
+    font-family: pop-sb;
+}
+
+.cards,.git-card{
     min-width: 30%;
     height: 65vh;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     scroll-snap-align: start;
     cursor: grab;
     border-radius: 1vw;
@@ -551,8 +609,9 @@ header label img{
 .artCollageBlock{
     width: 100%;
     /* background-color: grey; */
-    padding: 4vw 5vw;
+    padding: 8vw 5vw 4vw 5vw; 
     display: flex;
+    flex-direction: column;
     position: relative;
     align-items: center;
 }
@@ -560,7 +619,7 @@ header label img{
 .artCollageBgTape{
     position: absolute;
     width: 100%;
-    height: 55%;
+    height: 5%;
     left: 0;
     top: 0;
     background-color: var(--grey);
@@ -572,69 +631,177 @@ header label img{
     aspect-ratio: 2/1;
     /* background-color: #4d1f9d; */
     display: grid;
-    grid-gap: 1vw;
+    grid-gap: 1.3vw;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(3,1fr);
+    margin-top: 4vw;
 }
 
 .artCollage div{
+    /* background-color: whitesmoke; */
     border-radius: 1vw;
-    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    border: 0.15vw solid black;
+    overflow: hidden;
+    background-position: center;
+}
+
+.artCollage div:after{
+    display: grid;
+    border-radius: 0.9vw;
+    place-items: center;
+    height: 100%;
+    background-color: var(--grey);
+    font-family: pop-sb;
+    color: black;
+    transition: all 0.5s ease;
+}
+
+.big-sqr{
+    font-size: 2vw;
+}
+
+.small-sqr{
+    font-size: 1.2vw;
+}
+
+.artCollage div:hover:after{
+    transform: translateY(0);
+    transform: translateX(0);
 }
 
 .artCollagecomp1{
     grid-column: 1/3;
     grid-row: 1/3;
+    background-image: url(collage/img1.png);
+    background-size: cover;
+}
+
+.artCollagecomp1:after{
+    content: "Social Media Post";
+    transform: translateY(-100%);
 }
 
 .artCollagecomp2{
     grid-column: 1/2;
     grid-row: 3/4;
+    background-image: url(collage/yt-monitize-ad.jpg);
+    background-size: cover;
+}
+
+.artCollagecomp2:after{
+    content: "Ad-ware Posts";
+    transform: translateX(-100%);
 }
 
 .artCollagecomp3{
     grid-column: 2/3;
     grid-row: 3/4;
+    background-image: url(collage/img5.png);
+    background-size: 90%;
+    background-color: white;
+}
+
+.artCollagecomp3:after{
+    content: "Branding";
+    transform: translateY(100%);
 }
 
 .artCollagecomp4{
     grid-column: 3/4;
     grid-row: 1/2;
+    background-image: url(collage/my-r-logo.png);
+    background-size: cover;
+}
+
+.artCollagecomp4:after{
+    content: "Logo Design";
+    transform: translateX(-100%);
 }
 
 .artCollagecomp5{
     grid-column: 4/5;
     grid-row: 1/2;
+    background-image: url(collage/img3.png);
+    background-size: cover;
+}
+
+.artCollagecomp5:after{
+    content: "Product Ads";
+    transform: translateY(-100%);
 }
 
 .artCollagecomp6{
     grid-column: 3/5;
     grid-row: 2/4;
+    background-image: url(collage/img6.jpg);
+    background-size: cover;
+}
+
+.artCollagecomp6:after{
+    content: "Digital Art";
+    transform: translateY(100%);
 }
 
 .artCollagecomp7{
     grid-column: 5/6;
     grid-row: 1/2;
+    background-image: url(collage/img7.png);
+    background-size: 90%;
+    background-color: white;
+}
+
+.artCollagecomp7:after{
+    content: "Branding";
+    transform: translateY(-100%);
 }
 
 .artCollagecomp8{
     grid-column: 6/7;
     grid-row: 1/2;
+    background-image: url(collage/img8.png);
+    background-size: cover;
+}
+
+.artCollagecomp8:after{
+    content: "UI/UX";
+    transform: translateX(100%);
 }
 
 .artCollagecomp9{
     grid-column: 5/7;
     grid-row: 2/3;
+    background-image: url(collage/img9.jpg);
+    background-size: cover;
+}
+
+.artCollagecomp9:after{
+    content: "Video Editing";
+    transform: translateX(100%);
 }
 
 .artCollagecomp10{
     grid-column: 5/6;
     grid-row: 3/4;
+    background-image: url(collage/tshirt-branding.jpg);
+    background-size: cover;
+}
+
+.artCollagecomp10:after{
+    content: "Product Marketing";
+    transform: translateY(100%);
 }
 
 .artCollagecomp11{
     grid-column: 6/7;
     grid-row: 3/4;
+    background-image: url(collage/RE-logo.jpg);
+    background-size: cover;
+}
+
+.artCollagecomp11:after{
+    content: "Branding";
+    transform: translateX(100%);
 }
 
 /* ==================================  Block 5 =================================== */
@@ -643,7 +810,7 @@ header label img{
     /* background-color: red; */
     width: 100%;
     padding: 0 5vw 5vw 5vw;
-    padding-top: 2vw;
+    padding-top: 5vw;
 }
 
 .contact-block-holder{
@@ -654,17 +821,19 @@ header label img{
 
 .contact-block1{
     width: 50%;
+    /* background-color: #4d1f9d; */
+    margin-left:  6vw;
 }
 
 .contact-block1 h2{
-    font-size: 2.5vw;
+    font-size: 2.2vw;
     margin: 2vw 0;
     color: var(--dc);
 }
 
 .contact-block1 p{
     font-size: 1.4vw;
-    margin-bottom: 2vw;
+    margin-bottom: 5vw;
     color: grey;
 }
 
@@ -681,7 +850,7 @@ header label img{
 .contact-creds i{
     font-size: 1.5vw;
     padding: 0;
-    color: grey;
+    color: var(--dc);
 }
 
 .contact-block2{
@@ -700,6 +869,7 @@ header label img{
     border-radius: 50%;
     position: relative;
     border: 0.4vw solid black;
+    margin-right: 5vw;
 }
 
 .pulse::before,
@@ -798,6 +968,45 @@ header label img{
 
 footer{
     width: 100%;
-    height: 12vw;
+    height: 11vw;
     background: var(--dc);
+    margin-top: 4vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5vw;
 }
+
+footer div{
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.copyright,.web,.web a{
+    max-width: fit-content;
+    font-size: 1.2vw;
+    text-decoration: none;
+    color: white;
+}
+
+.social-icons,.social-icons a{
+    font-size: 2vw;
+    color: white;
+    gap: 1.6vw;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.social-icons a:hover{
+    transform: scale(1.3);
+}
+/* footer div{
+    height: 100%;
+    width: 30%;
+    background-color: red;
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+} */

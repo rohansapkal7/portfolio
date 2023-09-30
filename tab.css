@@ -243,6 +243,34 @@
         border: none;
     }
 
+    .git-card{
+        min-width: 100%;
+        height: 60vw;
+        pointer-events: all;
+        align-items: center;
+        border-radius: 2vw;
+        border: none;
+        padding: 5% 0;
+    }
+
+    .git-dp{
+        width: 30%;
+    }
+
+    .github-name{
+        font-size: 5vw;
+    }
+
+    .git-userId{
+        font-size: 2vw;
+        margin-top: -4vw;
+    }
+
+    .swipe-to p{
+        font-size: 2.5vw;
+        padding: 0.5vw 0;
+    }
+
     .card-tape{
         width: 23%;
         height: 100%;
@@ -317,18 +345,29 @@
     /* ================================== Block 4 ==================================== */
 
     .artCollageBlock{
-        align-items: center;
-        padding: 5vw 5vw;
+        align-items: start;
+        padding: 13vw 5vw 5vw 5vw;
+        /* background-color: aqua; */
+    }
+
+    .big-sqr{
+        font-size: 3vw;
+    }
+
+    .small-sqr{
+        font-size: 1.8vw;
     }
 
     .artCollageBgTape{
-        height: 40%;
+        height: 5%;
     }
 
     .artCollage{
         aspect-ratio: 1/1;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(4,1fr);
+        gap: 2vw;
+        margin-top: 10vw;
     }
 
     .artCollagecomp1{
@@ -391,7 +430,7 @@
     width: 100%;
     padding: 0 5vw 5vw 5vw;
     overflow: hidden;
-    margin-top: 6vw;
+    margin-top: 8vw;
 }
 
 .contact-block-holder{
@@ -405,6 +444,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 0;
 }
 
 .contact-block1 h2{
@@ -441,6 +481,7 @@
 
 .pulse{
     width: 35%;
+    margin-right: 0;
 }
 
 .pulse::before{
@@ -496,6 +537,35 @@
 #submit-btn{
     font-size: 2.5vw;
     padding: 1.5vw 0;
+}
+
+/* ==================================  Block 7 =================================== */
+
+footer{
+    height: 25vw;
+    flex-direction: column;
+    align-items: center;
+    padding: 4.5vw 0;
+}
+
+.copyright,.web,.web a{
+    font-size: 2.5vw;
+}
+
+.social-icons,.social-icons a{
+    font-size: 3.5vw;
+    color: white;
+    gap: 4vw;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.social-icons a:hover{
+    transform: scale(1.3);
+}
+
+.copyright br{
+    display: none;
 }
 
 }

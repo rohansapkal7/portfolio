@@ -1,5 +1,0 @@
-https://docs.google.com/forms/d/e/1FAIpQLSenS_LM5WZbvB9QioUtSjCc96J-RWJ9ZK2SDvJXrFGcl422Rw/formResponse
-
-entry.974300445=111-name
-entry.641115607=111-email
-entry.129044665=111-msg
