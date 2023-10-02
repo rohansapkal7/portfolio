@@ -51,3 +51,18 @@ form.addEventListener('submit', e => {
   .then(() => { window.location.reload(); })
   .catch(error => console.error('Error!', error.message))
 })
+
+//===================  Download Links  ==========================
+
+function visit(num){
+    switch(num){
+        case 1 : 
+            window.open("https://github.com/rohansapkal7/portfolio","_blank");
+        case 2 : 
+            window.open("https://drive.google.com/drive/folders/1SrczT3QxMtuuGC2CuaZDpb0wZ0Kc977U?usp=drive_link","_blank");
+        case 3 : 
+            window.open("https://drive.google.com/drive/folders/1T5JU57e4UDy2xa991abOfdUTsp5DHvCA?usp=drive_link","_blank");
+        case 4 : 
+            window.open("https://drive.google.com/drive/folders/1T5NK2Z3T_F1VNW8WHQFmj9Br_wiSa0go?usp=drive_link","_blank");
+    }
+}

@@ -308,12 +308,12 @@
         font-size: 3vw;
         padding: 2vw 0;
     }
+
+    footer{
+        height: 35vw;
+        padding: 8vw 0;
+    }
    
 }
 
 /* ==================================  Footer =================================== */
-
-footer{
-    height: 35vw;
-    padding: 8vw 0;
-}
